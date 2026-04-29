@@ -1,10 +1,10 @@
-import dotenv, { config } from "dotenv";
-import { mongo } from "mongoose";
+import dotenv from "dotenv";
+
 dotenv.config();
 
 export default {
-  mongo_uri: process.env.mongo_Uri,
-  port: process.env.port,
+  mongo_uri: process.env.MONGO_URI,
+  port: process.env.PORT,
   user: process.env.EMAIL_USER, 
   pass: process.env.EMAIL_PASS,
 };
